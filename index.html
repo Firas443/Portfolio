@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Creative developer + designer. Websites & Flutter apps with strong visual identity." />
+  <title>Firas's portfolio</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="backdrop" aria-hidden="true">
+    <div class="grain"></div>
+    <div class="poster-scratches"></div>
+
+    <svg class="scribbles" viewBox="0 0 1200 900" preserveAspectRatio="none">
+      <path d="M80 120 C 220 10, 420 20, 560 140 S 850 270, 1040 110"
+            fill="none" stroke="rgba(255,244,229,0.35)" stroke-width="3" stroke-linecap="round" />
+      <path d="M120 760 C 280 620, 520 600, 640 740 S 920 900, 1110 720"
+            fill="none" stroke="rgba(255,244,229,0.24)" stroke-width="4" stroke-linecap="round" />
+      <path d="M980 240 C 820 360, 820 520, 1020 610"
+            fill="none" stroke="rgba(255,244,229,0.22)" stroke-width="4" stroke-linecap="round" />
+    </svg>
+
+    <div class="shape shape--a"></div>
+    <div class="shape shape--b"></div>
+    <div class="shape shape--c"></div>
+  </div>
+
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__text">Firas ben Abdallah</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only" data-i18n="nav.openMenu">Ouvrir le menu</span>
+          <span class="menuIcon" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav__menu" id="navMenu">
+          <a href="#what" data-i18n="nav.what">Ce que je fais</a>
+          <a href="#work" data-i18n="nav.work">Projets</a>
+          <a href="#services" data-i18n="nav.services">Services</a>
+          <a href="#about" data-i18n="nav.about">À propos</a>
+          <a class="nav__cta" href="#contact" data-i18n="nav.cta">On travaille ensemble</a>
+        </div>
+      </nav>
+
+      <div class="langSwitch" aria-label="Language switcher">
+        <button class="langBtn is-active" type="button" data-lang="fr" aria-pressed="true">FR</button>
+        <button class="langBtn" type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__left">
+          <p class="stamp reveal">
+            <span class="stamp__dot" aria-hidden="true"></span>
+            <span data-i18n="hero.stamp">Disponible en freelance • créatif + fiable</span>
+          </p>
+
+          <h1 class="hero__title reveal">
+            <span data-i18n="hero.titleA">Je conçois et je développe</span>
+            <span class="hero__title--cut" data-i18n="hero.titleB">des sites web</span>
+            <span data-i18n="hero.titleC">qui ont de la vie.</span>
+          </h1>
+
+          <p class="hero__sub reveal" data-i18n="hero.sub">
+            Je suis un(e) <strong>développeur(se) créatif(ve)</strong> avec l’œil d’un(e) designer.
+            Je crée des sites modernes et des apps mobiles fluides — avec une identité visuelle forte et premium,
+            pas générique. Le design et la vidéo sont des outils que j’utilise quand ils renforcent vraiment le résultat.
+          </p>
+
+          <div class="hero__cta reveal">
+            <a class="btn btn--solid" href="#work">
+              <span data-i18n="hero.btnWork">Voir une sélection</span> <span aria-hidden="true">↗</span>
+            </a>
+            <a class="btn btn--ghost" href="#contact">
+              <span data-i18n="hero.btnContact">Travaillons ensemble</span> <span aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <div class="hero__metrics reveal">
+            <div class="metric">
+              <div class="metric__big" data-i18n="metrics.fast.big">Rapide</div>
+              <div class="metric__small" data-i18n="metrics.fast.small">Livraison qui respecte les délais</div>
+            </div>
+            <div class="metric">
+              <div class="metric__big" data-i18n="metrics.clean.big">Propre</div>
+              <div class="metric__small" data-i18n="metrics.clean.small">Visuels premium + structure claire</div>
+            </div>
+            <div class="metric">
+              <div class="metric__big" data-i18n="metrics.human.big">Humain</div>
+              <div class="metric__small" data-i18n="metrics.human.small">Une communication que tu ne dois pas relancer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__right reveal">
+          <figure class="heroAnchor" aria-label="Hero visual">
+            <div class="heroAnchor__frame">
+              <img
+                src="assets/hero.png"
+                alt="Illustrated character with red glasses — portfolio visual anchor"
+                class="heroAnchor__img"
+                loading="eager"
+              />
+              <div class="heroAnchor__glow" aria-hidden="true"></div>
+              <div class="heroAnchor__edge" aria-hidden="true"></div>
+            </div>
+
+            <figcaption class="heroAnchor__caption">
+              <span class="capTag" data-i18n="hero.tags.creative">créatif</span>
+              <span class="capTag" data-i18n="hero.tags.developer">développeur</span>
+              <span class="capTag" data-i18n="hero.tags.designer">designer</span>
+            </figcaption>
+
+            <div class="heroAnchor__base" aria-hidden="true"></div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="ticker" aria-label="Highlights">
+          <div class="ticker__track">
+            <span data-i18n="ticker.bold">Visuels audacieux</span><span class="dot">•</span>
+            <span data-i18n="ticker.story">Mise en page orientée histoire</span><span class="dot">•</span>
+            <span data-i18n="ticker.type">Typographie premium</span><span class="dot">•</span>
+            <span data-i18n="ticker.mobile">Mobile-first</span><span class="dot">•</span>
+            <span data-i18n="ticker.fast">Livraison rapide</span><span class="dot">•</span>
+
+            <span data-i18n="ticker.bold">Visuels audacieux</span><span class="dot">•</span>
+            <span data-i18n="ticker.story">Mise en page orientée histoire</span><span class="dot">•</span>
+            <span data-i18n="ticker.type">Typographie premium</span><span class="dot">•</span>
+            <span data-i18n="ticker.mobile">Mobile-first</span><span class="dot">•</span>
+            <span data-i18n="ticker.fast">Livraison rapide</span><span class="dot">•</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="what">
+      <div class="wrap">
+        <div class="sectionHead reveal">
+          <h2 class="h2" data-i18n="what.title">Ce que je fais</h2>
+          <p class="sectionHead__note" data-i18n="what.note">
+            Des résultats clairs et orientés client — pas du blabla technique.
+          </p>
+        </div>
+
+        <div class="whatGrid">
+          <article class="whatCard reveal">
+            <div class="whatCard__icon" aria-hidden="true">✦</div>
+            <h3 data-i18n="what.card1.title">Des sites qui paraissent “haut de gamme”</h3>
+            <p data-i18n="what.card1.desc">
+              Des sites modernes qui inspirent confiance et guident vers l’action.
+            </p>
+            <ul>
+              <li data-i18n="what.card1.li1">Landing pages & portfolios</li>
+              <li data-i18n="what.card1.li2">Mise en page forte + CTA clair</li>
+              <li data-i18n="what.card1.li3">Mobile-first + rapide</li>
+            </ul>
+          </article>
+
+          <article class="whatCard reveal">
+            <div class="whatCard__icon" aria-hidden="true">◎</div>
+            <h3 data-i18n="what.card2.title">Des apps mobiles fluides</h3>
+            <p data-i18n="what.card2.desc">
+              Des apps Flutter avec un parcours simple et des écrans polis — faciles à utiliser, agréables au quotidien.
+            </p>
+            <ul>
+              <li data-i18n="what.card2.li1">Écrans UI & navigation</li>
+              <li data-i18n="what.card2.li2">Interactions soignées</li>
+              <li data-i18n="what.card2.li3">Prêtes à évoluer</li>
+            </ul>
+          </article>
+
+          <article class="whatCard reveal whatCard--cut">
+            <div class="whatCard__icon" aria-hidden="true">⟡</div>
+            <h3 data-i18n="what.card3.title">Une identité visuelle qui soutient le produit</h3>
+            <p data-i18n="what.card3.desc">
+              Quand c’est utile, j’ajoute du design + de la vidéo pour rendre le résultat plus complet et distinctif.
+            </p>
+            <ul>
+              <li data-i18n="what.card3.li1">Kits de marque & templates sociaux</li>
+              <li data-i18n="what.card3.li2">Affiches & systèmes visuels</li>
+              <li data-i18n="what.card3.li3">Montages courts</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <p class="disruption reveal">
+        <span data-i18n="disruption.a">Je ne fais pas “moyen”.</span>
+        <span data-i18n="disruption.b">On construit quelque chose avec du goût.</span>
+      </p>
+    </div>
+
+    <section class="section section--work" id="work">
+      <div class="wrap">
+        <div class="sectionHead reveal">
+          <h2 class="h2" data-i18n="work.title">Projets sélectionnés</h2>
+          <p class="sectionHead__note" data-i18n="work.note">
+            Des exemples “story-first”. Même les placeholders parlent d’un vrai résultat.
+          </p>
+        </div>
+
+        <div class="filters reveal" role="tablist" aria-label="Work filters">
+          <button class="filter is-active" data-filter="all" role="tab" data-i18n="filters.all">Tous</button>
+          <button class="filter" data-filter="web" role="tab" data-i18n="filters.web">Web</button>
+          <button class="filter" data-filter="app" role="tab" data-i18n="filters.apps">Apps</button>
+          <button class="filter" data-filter="design" role="tab" data-i18n="filters.design">Design</button>
+          <button class="filter" data-filter="video" role="tab" data-i18n="filters.video">Vidéo</button>
+        </div>
+
+        <div class="workGrid" id="workGrid">
+          <!-- WEB -->
+          <article class="workCard reveal" data-tags="web">
+            <div class="workCard__top">
+              <h3 data-i18n="work.c1.title">Landing page restaurant</h3>
+              <span class="pill" data-i18n="work.tags.web">Web</span>
+            </div>
+            <p class="workCard__desc" data-i18n="work.c1.desc">
+              <strong>Problème :</strong> la marque était oubliable en ligne.<br />
+              <strong>Résultat :</strong> une page audacieuse qui rend la carte premium et pousse les réservations.
+            </p>
+            <div class="workCard__meta">
+              <span data-i18n="work.c1.m1">Clarté</span>
+              <span data-i18n="work.c1.m2">Confiance</span>
+              <span data-i18n="work.c1.m3">Réservations</span>
+            </div>
+            <div class="workCard__bottom">
+            <a class="workLink" href="https://www.behance.net/gallery/241208507/Restaurant-Landing-Page" target="_blank" rel="noopener">
+              <span data-i18n="work.soon.view">Voir</span>
+            </a>
+
+
+          </div>
+
+          </article>
+
+          <article class="workCard reveal workCard--big" data-tags="web,design">
+            <div class="workCard__top">
+              <h3 data-i18n="work.c2.title">Portfolio marque personnelle</h3>
+              <span class="pill pill--alt" data-i18n="work.tags.webid">Web + Identité</span>
+            </div>
+            <p class="workCard__desc" data-i18n="work.c2.desc">
+              <strong>Problème :</strong> “je fais plein de choses” ne passait pas.<br />
+              <strong>Résultat :</strong> un site centré sur la personnalité — intentionnel, mémorable, “hireable”.
+            </p>
+            <div class="workCard__meta">
+              <span data-i18n="work.c2.m1">Story</span>
+              <span data-i18n="work.c2.m2">Présence</span>
+              <span data-i18n="work.c2.m3">Mémorable</span>
+            </div>
+            <div class="workCard__bottom">
+              <a class="workLink" href="https://YOUR-RESTAURANT-LINK.com" target="_blank" rel="noopener">
+                <span data-i18n="work.soon.view">Voir</span>
+              </a>
+            </div>
+
+          </article>
+
+          <!-- APPS -->
+          <article class="workCard reveal" data-tags="app">
+            <div class="workCard__top">
+              <h3 data-i18n="work.c3.title">Habit tracker Flutter</h3>
+              <span class="pill" data-i18n="work.tags.app">App</span>
+            </div>
+            <p class="workCard__desc" data-i18n="work.c3.desc">
+              <strong>Problème :</strong> les gens quittent les apps “brouillon”.<br />
+              <strong>Résultat :</strong> un flow calme et satisfaisant qui rend l’usage quotidien simple.
+            </p>
+            <div class="workCard__meta">
+              <span data-i18n="work.c3.m1">Fluide</span>
+              <span data-i18n="work.c3.m2">Simple</span>
+              <span data-i18n="work.c3.m3">Habitudes</span>
+            </div>
+            <div class="workCard__bottom">
+              <a class="workLink" href="https://YOUR-RESTAURANT-LINK.com" target="_blank" rel="noopener">
+                <span data-i18n="work.soon.view">Voir</span>
+              </a>
+            </div>
+
+          </article>
+
+          <article class="workCard reveal" data-tags="app,design">
+            <div class="workCard__top">
+              <h3 data-i18n="work.c4.title">UI kit app de commande</h3>
+              <span class="pill pill--alt" data-i18n="work.tags.appui">App + UI</span>
+            </div>
+            <p class="workCard__desc" data-i18n="work.c4.desc">
+              <strong>Problème :</strong> commander était lent et confus.<br />
+              <strong>Résultat :</strong> une UI claire qui réduit la friction et accélère le checkout.
+            </p>
+            <div class="workCard__meta">
+              <span data-i18n="work.c4.m1">Vitesse</span>
+              <span data-i18n="work.c4.m2">Flow</span>
+              <span data-i18n="work.c4.m3">Conversion</span>
+            </div>
+            <div class="workCard__bottom">
+              <a class="workLink" href="https://YOUR-RESTAURANT-LINK.com" target="_blank" rel="noopener">
+                <span data-i18n="work.soon.view">Voir</span>
+              </a>
+            </div>
+
+          </article>
+
+          <!-- DESIGN -->
+          <article class="workCard reveal" data-tags="design">
+            <div class="workCard__top">
+              <h3 data-i18n="work.c5.title">Pack branding</h3>
+              <span class="pill" data-i18n="work.tags.design">Design</span>
+            </div>
+            <p class="workCard__desc" data-i18n="work.c5.desc">
+              <strong>Problème :</strong> aucun style cohérent.<br />
+              <strong>Résultat :</strong> un système visuel solide et immédiatement reconnaissable.
+            </p>
+            <div class="workCard__meta">
+              <span data-i18n="work.c5.m1">Identité</span>
+              <span data-i18n="work.c5.m2">Cohérence</span>
+              <span data-i18n="work.c5.m3">Impact</span>
+            </div>
+            <div class="workCard__bottom">
+            <a class="workLink" href="https://YOUR-RESTAURANT-LINK.com" target="_blank" rel="noopener">
+              <span data-i18n="work.soon.view">Galerie</span>
+            </a>
+
+            <a class="workLink" href="https://www.behance.net/YOURUSERNAME" target="_blank" rel="noopener">
+              <span data-i18n="work.soon.behance">Behance</span>
+            </a>
+
+          </div>
+          </article>
+
+          <!-- VIDEO -->
+          <article class="workCard reveal" data-tags="video">
+            <div class="workCard__top">
+              <h3 data-i18n="work.c6.title">Montages courts (short-form)</h3>
+              <span class="pill" data-i18n="work.tags.video">Vidéo</span>
+            </div>
+            <p class="workCard__desc" data-i18n="work.c6.desc">
+              <strong>Problème :</strong> des edits “random” qui perdent l’attention.<br />
+              <strong>Résultat :</strong> meilleur rythme + sous-titres propres pour la rétention.
+            </p>
+            <div class="workCard__meta">
+              <span data-i18n="work.c6.m1">Rythme</span>
+              <span data-i18n="work.c6.m2">Rétention</span>
+              <span data-i18n="work.c6.m3">Clarté</span>
+            </div>
+            <div class="workCard__bottom">
+            <a class="workLink" href="https://YOUR-RESTAURANT-LINK.com" target="_blank" rel="noopener">
+              <span data-i18n="work.soon.view">reel</span>
+            </a>
+
+            <a class="workLink" href="https://YOUR-CASE-STUDY-LINK.com" target="_blank" rel="noopener">
+              <span data-i18n="work.soon.case">Demander des exemples</span>
+            </a>
+          </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <div class="sectionHead reveal">
+          <h2 class="h2" data-i18n="services.title">Services</h2>
+          <p class="sectionHead__note" data-i18n="services.note">Offres simples. Faciles à acheter.</p>
+        </div>
+
+        <div class="servicesGrid">
+          <article class="service reveal">
+            <h3 data-i18n="services.s1.title">Site / landing page</h3>
+            <p data-i18n="services.s1.desc">Pour les entreprises qui veulent un look moderne et des résultats.</p>
+            <div class="service__list">
+              <span data-i18n="services.s1.li1">Design + développement</span>
+              <span data-i18n="services.s1.li2">Mobile-first</span>
+              <span data-i18n="services.s1.li3">Prêt à déployer</span>
+            </div>
+          </article>
+
+          <article class="service reveal service--offset">
+            <h3 data-i18n="services.s2.title">Écrans Flutter</h3>
+            <p data-i18n="services.s2.desc">Des écrans UI propres, un flow fluide, des détails polis.</p>
+            <div class="service__list">
+              <span data-i18n="services.s2.li1">UI + navigation</span>
+              <span data-i18n="services.s2.li2">Composants réutilisables</span>
+              <span data-i18n="services.s2.li3">Prêt à évoluer</span>
+            </div>
+          </article>
+
+          <article class="service reveal">
+            <h3 data-i18n="services.s3.title">Support branding (optionnel)</h3>
+            <p data-i18n="services.s3.desc">Quand ton produit a besoin d’une identité plus forte pour se démarquer.</p>
+            <div class="service__list">
+              <span data-i18n="services.s3.li1">Brand kit</span>
+              <span data-i18n="services.s3.li2">Templates sociaux</span>
+              <span data-i18n="services.s3.li3">Système visuel</span>
+            </div>
+          </article>
+
+          <article class="service reveal service--cut">
+            <h3 data-i18n="services.s4.title">Support vidéo (optionnel)</h3>
+            <p data-i18n="services.s4.desc">Des montages courts propres — quand ça sert ton lancement ou ton contenu.</p>
+            <div class="service__list">
+              <span data-i18n="services.s4.li1">Sous-titres</span>
+              <span data-i18n="services.s4.li2">Rythme</span>
+              <span data-i18n="services.s4.li3">Exports plateforme</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="wrap about">
+        <div class="about__left reveal">
+          <h2 class="h2" data-i18n="about.title">À propos</h2>
+          <p class="about__lead" data-i18n="about.lead">
+            Je crois qu’un bon produit digital doit sembler évident — comme s’il devait exister ainsi.
+          </p>
+          <p class="about__text" data-i18n="about.text">
+            J’accorde beaucoup d’importance à la <strong>clarté</strong> : celle qui donne confiance en quelques secondes.
+            Et j’évite les sites “bruyants”, lents, ou “faits pour impressionner les designers”
+            au lieu d’aider des gens réels.
+          </p>
+
+          <div class="about__badges">
+            <span class="badge" data-i18n="about.badge1">Créatif d’abord</span>
+            <span class="badge" data-i18n="about.badge2">Livraison fiable</span>
+            <span class="badge" data-i18n="about.badge3">Obsédé du détail</span>
+          </div>
+        </div>
+
+        <aside class="about__right reveal">
+          <div class="noteCard">
+            <h3 data-i18n="about.fit.title">Idéal pour</h3>
+            <ul>
+              <li data-i18n="about.fit.li1">Petites entreprises qui veulent un site premium</li>
+              <li data-i18n="about.fit.li2">Créateurs qui construisent une marque personnelle</li>
+              <li data-i18n="about.fit.li3">Startups qui veulent design + build</li>
+            </ul>
+          </div>
+
+          <div class="noteCard noteCard--alt">
+            <h3 data-i18n="about.style.title">Façon de travailler</h3>
+            <ul>
+              <li data-i18n="about.style.li1">Boucles de feedback rapides</li>
+              <li data-i18n="about.style.li2">Étapes claires</li>
+              <li data-i18n="about.style.li3">Process simple, pas compliqué</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <div class="wrap contact">
+        <div class="contact__box reveal">
+          <h2 class="contact__title" data-i18n="contact.title">Créons quelque chose que tu seras fier(ère) de partager.</h2>
+          <p class="contact__text" data-i18n="contact.text">
+            Si tu as une idée (ou même un brouillon), envoie-la.
+            Je réponds avec une direction claire et ce que je ferais en premier — sans pression.
+          </p>
+
+          <div class="contact__row">
+            <div class="contact__item">
+              <span class="contact__label" data-i18n="contact.email.label">Email</span>
+              <a class="contact__value" href="mailto:youremail@example.com">benabdallahfiras833@gmail.com</a>
+            </div>
+
+            <div class="contact__item">
+              <span class="contact__label" data-i18n="contact.elsewhere.label">Ailleurs</span>
+              <div class="socials">
+              <a href="https://www.instagram.com/abdallah.firasben/" target="_blank" rel="noopener" data-i18n="contact.social.instagram">Instagram</a>
+              <a href="https://www.behance.net/firasbenabd" target="_blank" rel="noopener" data-i18n="contact.social.behance">Behance</a>
+              <a href="https://github.com/Firas443" target="_blank" rel="noopener" data-i18n="contact.social.github">GitHub</a>
+            </div>
+
+            </div>
+          </div>
+
+          <div class="contact__footer">
+            <span class="tiny" data-i18n="contact.footer.remote">Disponible à distance</span>
+            <a class="btn btn--solid btn--small" href="#work" data-i18n="contact.footer.btn">Voir les projets</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <span>© <span id="year"></span> Firas Ben Abdallah</span>
+        <span class="footer__muted" data-i18n="footer.muted">Portfolio développeur créatif + designer</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
